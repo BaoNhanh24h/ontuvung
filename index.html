@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Từ Vựng Tiếng Hàn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h1>Học Từ Vựng Tiếng Hàn</h1>
+    <input type="file" id="uploadExcel" accept=".xlsx">
+    <div id="wordContainer" style="display: none;">
+        <div class="" style="display: flex; justify-content: space-between;">
+            <p id="score" style="color: #218838;">Điểm: 0</p>
+            <p id="wrongCount" style="color: red;">Số từ sai: 0</p> <!-- Thêm dòng này -->
+        </div>
+        <p id="vietnameseMeaning"></p>
+        <p id="resultMessage"></p>
+        <input type="text" id="inputKorean" placeholder="Nhập từ tiếng Hàn">
+        <button id="checkButton" style="margin-top: 30px;">Kiểm tra</button>
+        <button id="nextButton">Tiếp theo</button>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
